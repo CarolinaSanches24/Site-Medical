@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding :0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    
+    color: #1c1c1c;
+    margin: 0;
+    padding: 0;
+    height:230vh;
+
+}
+
+h1, h2, h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+    color :#000000;
+   
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    padding: 40px 0 40px 1%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #027B96;
+    box-shadow: 3px 0 0 lightskyblue;
+    position: fixed;
+    top:0;
+    left:0;
+    overflow: hidden;
+    transition: .2s;
+}
+.btn-expandir{
+    width: 100%;
+    padding-left:20px;
+}
+.btn-expandir > i{
+    color:#FFFFFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+nav > a {
+    text-decoration: none;
+    color:#FFFFFF;
+    font-size: 32px;
+    font-family: serif;
+    
+}
+ul{
+    height : 100%;
+    width: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition:.2s;
+    
+}
+ul li.item-menu:hover{
+    background: lightskyblue;
+    
+    
+    
+}
+ul li.item-menu a{
+    color:#FFFFFF;
+    text-decoration: none;
+    font-size:20px;
+    padding:15px;
+    display: flex;
+    line-height: 40px;
+    margin-top: 5px;
+   
+    
+}
+ul li.item-menu a .txt-link{
+    margin-left:25px;
+   
+}
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left:10px;
+    
+}
+nav.menu-lateral:hover{
+    width: 300px;
+}
+nav.menu-lateral:hover +#topo{
+    margin-left: 320px;
+    
+}
+
+#topo{
+    margin-left: 100px;
+    
+    
+}
+
+#Atendimentos{
+    margin-top:50px;
+    background:lightcyan;
+    height: 300px;
+    padding: 20px;
+    
+}
+
+
+.icones{
+    padding :15px 0px 0px;
+    margin-left: 100px;
+    
+
+}
+.lbl_atendimentos{
+    font-family: 'Merriweather', serif;
+    color :#000000;
+    text-align: center;
+    margin-left: 80px;
+    text-decoration: none;
+    
+}
+#txt_atend{
+    text-align: center;
+}
+
+.contato{
+ display:inline-block;
+ margin-left: 500px;
+ /* background-color: red; */
+ 
+}
+.ctn{
+    font-family: 'Merriweather', serif;
+    color :#000000;
+    font-size: 20px;
+    
+}
+
+.icon-contato{
+  display: flex;
+}
+
+.icon-email{
+    display: flex;
+    
+}
+.links{
+    color: black; /* Define a cor para links visitados */
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 20px;
+    
+}
+
+#rodape{
+    display: flex;
+    margin-top: 20px;
+    padding: 15px;
+    margin-left: 50px;
+    margin-top: 50px;
+    color:#FFFFFF;
+    text-decoration: none;
+    /* background: blue; */
+    
+}
+#social{
+    margin-top:30px;
+}
