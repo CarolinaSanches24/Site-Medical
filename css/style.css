@@ -34,7 +34,7 @@ nav.menu-lateral{
     top:0;
     left:0;
     overflow: hidden;
-    transition: .2s;
+    transition: .5s;
 }
 .btn-expandir{
     width: 100%;
@@ -62,9 +62,13 @@ ul li.item-menu{
     transition:.2s;
     
 }
+ul li.ativo{
+    background-color:#027B96;
+    opacity: 0.5;
+}
 ul li.item-menu:hover{
-    background: lightskyblue;
-    
+    background: cornflowerblue;
+   
     
     
 }
@@ -81,17 +85,23 @@ ul li.item-menu a{
 }
 ul li.item-menu a .txt-link{
     margin-left:25px;
+    transition: .5s;
+    
    
+}
+nav.menu-lateral.expandir ,.txt-link{
+    margin-left: 5;
+    opacity: 1;
 }
 ul li.item-menu a .icon > i{
     font-size: 30px;
     margin-left:10px;
     
 }
-nav.menu-lateral:hover{
+nav.menu-lateral.expandir{
     width: 300px;
 }
-nav.menu-lateral:hover +#topo{
+nav.menu-lateral.expandir +#topo{
     margin-left: 320px;
     
 }
