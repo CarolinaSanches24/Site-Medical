@@ -1,0 +1,14 @@
+@media (max-width: 769px){
+    nav.menu-lateral{
+        width:100%;
+        
+    }
+    .item-menu{
+        margin-top:50px;
+    }
+    
+    .btn-expandir{
+        display:none;
+    }
+}
+
