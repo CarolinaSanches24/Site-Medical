@@ -1,14 +1,230 @@
-@media (max-width: 769px){
-    nav.menu-lateral{
-        width:100%;
-        
-    }
-    .item-menu{
-        margin-top:50px;
-    }
-    
-    .btn-expandir{
-        display:none;
-    }
+@media (max-width: 769px) {
+  :root {
+    --DarkRed: #8b0000;
+    --branco: #ffffff;
+    --FireBrick: #b22222;
+    --sombra-laranja: 4px 4px 4px 4px #ff8c00;
+    --laranja: #ff8c00;
+  }
+  body {
+    width: 100vw;
+  }
+  .menu_responsivo {
+    display: block;
+  }
+  nav.menu-lateral {
+    width: 80px;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--DarkRed);
+    box-shadow: 3px 0 0 #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 100;
+  }
+  .btn-expandir {
+    width: 100%;
+    padding-left: 20px;
+  }
+  .btn-expandir > i {
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  nav > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 32px;
+    font-family: serif;
+  }
+  ul {
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+  }
+
+  ul li.item-menu {
+    transition: 0.2s;
+  }
+  ul li.ativo {
+    background-color: #b22222;
+    opacity: 0.5;
+  }
+  ul li.item-menu:hover {
+    border-bottom: solid 3px var(--branco);
+  }
+  ul li.item-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    display: flex;
+    line-height: 40px;
+    margin-top: 5px;
+  }
+  ul li.item-menu a .txt-link {
+    margin-left: 25px;
+    transition: 0.5s;
+  }
+  nav.menu-lateral.expandir,
+  .txt-link {
+    margin-left: 5;
+    opacity: 1;
+  }
+  ul li.item-menu a .icon > i {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  nav.menu-lateral.expandir {
+    width: 100%;
+  }
+
+  .topo_titulo {
+    margin-left: 30%;
+  }
+  .container_topo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .container_topo img {
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 15px;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    background-color: var(--DarkRed);
+    box-shadow: var(--sombra-laranja);
+    border-radius: 5px;
+    margin: 2em 5em 2em 6em;
+    padding: 1em;
+    color: var(--branco);
+    position: relative;
+  }
+  .card:hover {
+    font-size: 18px;
+  }
+  .sobre {
+    display: flex;
+    flex-direction: column;
+    margin: 10em 5em 0em 10em;
+    background: var(--laranja);
+    border-radius: 10px;
+    padding: 2em;
+    color: var(--branco);
+    text-align: justify;
+  }
+  .botao_contratar {
+    margin: 1em;
+    background-color: var(--DarkRed);
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .botao_contratar:hover {
+    font-size: 20px;
+    text-decoration: underline;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--branco);
+  }
+  .icones {
+    background-color: var(--DarkRed);
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 15px;
+    text-align: center;
+    color: var(--branco);
+  }
+  .icones:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+  #Atendimentos {
+    padding: 0;
+  }
+  #txt_atend {
+    padding: 1em;
+  }
+  .container_atendimentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container_atendimentos img {
+    width: 50%;
+  }
+  .legenda {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 1em;
+  }
+  .rodape {
+    display: flex;
+    padding: 1em;
+  }
+  .legenda_social {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .container_social {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+  }
+  .container_social_icones {
+    display: flex;
+  }
+  .icon:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+  .contato {
+    margin-left: 5em;
+  }
 }
 
+@media screen and (width: 360px) and (height: 740px) {
+  .container_topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container_topo img {
+    width: 100vw;
+    margin-left: 10em;
+    margin-bottom: 5em;
+  }
+  .topo_titulo {
+    font-size: 20px;
+  }
+  .container_cards {
+    width: 120vw;
+    display: flex;
+    margin-left: 10em;
+    background-color: #ff8c00;
+  }
+  .card {
+    height: 30vh;
+    margin-right: 1em;
+    margin-left: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .sobre {
+    width: 100vw;
+    margin-left: 4em;
+  }
+}

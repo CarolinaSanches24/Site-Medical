@@ -1,8 +1,10 @@
-const btnExp = document.querySelector('#btn-exp');
-const menuSide = document.querySelector('.menu-lateral')
+const btnExp = document.querySelector("#btn-exp");
+const menuSide = document.querySelector(".menu-lateral");
+const esconderElementos = document.querySelectorAll(".esconder");
 
-btnExp.addEventListener('click', function(){
-    menuSide.classList.toggle('expandir')
-    //se  exister a classe expandir remova
-    //se nao existir adicione
-})
+btnExp.addEventListener("click", function () {
+  menuSide.classList.toggle("expandir");
+  esconderElementos.forEach(function (element) {
+    element.style.display === "none";
+  });
+});
